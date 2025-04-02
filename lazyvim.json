@@ -1,0 +1,12 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.lang.angular",
+    "lazyvim.plugins.extras.lang.prisma",
+    "lazyvim.plugins.extras.ui.mini-animate"
+  ],
+  "news": {
+    "NEWS.md": "10960"
+  },
+  "version": 7
+}
