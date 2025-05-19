@@ -41,34 +41,34 @@ return {
   --     vim.cmd("colorscheme sakura")
   --   end,
   -- },
-  -- {
-  --   -- Plugin for the Catppuccin color scheme
-  --   "catppuccin/nvim",
-  --   name = "catppuccin",
-  --   lazy = false, -- Load this plugin immediately
-  --   opts = {
-  --     transparent_background = true, -- Enable transparent background
-  --     flavour = "mocha", -- Set the flavor of the color scheme
-  --   },
-  --   integrations = {
-  --     cmp = true, -- Enable integration with nvim-cmp
-  --     gitsigns = true, -- Enable integration with gitsigns
-  --     nvimtree = true, -- Enable integration with nvim-tree
-  --     treesitter = true, -- Enable integration with treesitter
-  --     notify = false, -- Disable integration with nvim-notify
-  --     mini = {
-  --       enabled = true, -- Enable mini plugin integration
-  --       indentscope_color = "", -- Set indentscope color (empty means default)
-  --     },
-  --     -- Additional plugin integrations can be found in the documentation
-  --   },
-  -- },
-  -- {
-  --   -- Plugin for the Modus Themes
-  --   "miikanissi/modus-themes.nvim",
-  --   name = "modus",
-  --   priority = 1000, -- High priority to ensure it loads early
-  -- },
+  {
+    -- Plugin for the Catppuccin color scheme
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,                    -- Load this plugin immediately
+    opts = {
+      transparent_background = true, -- Enable transparent background
+      flavour = "mocha",             -- Set the flavor of the color scheme
+    },
+    integrations = {
+      cmp = true,               -- Enable integration with nvim-cmp
+      gitsigns = true,          -- Enable integration with gitsigns
+      nvimtree = true,          -- Enable integration with nvim-tree
+      treesitter = true,        -- Enable integration with treesitter
+      notify = false,           -- Disable integration with nvim-notify
+      mini = {
+        enabled = true,         -- Enable mini plugin integration
+        indentscope_color = "", -- Set indentscope color (empty means default)
+      },
+      -- Additional plugin integrations can be found in the documentation
+    },
+  },
+  {
+    -- Plugin for the Modus Themes
+    "miikanissi/modus-themes.nvim",
+    name = "modus",
+    priority = 1000, -- High priority to ensure it loads early
+  },
   {
     -- Plugin for the Kanagawa color scheme
     "rebelot/kanagawa.nvim",
@@ -126,23 +126,23 @@ return {
   -- },
   -- {
   -- Plugin for the Everforest color scheme
-  -- {
-  --   "neanias/everforest-nvim",
-  --   version = false, -- Use the latest version
-  --   lazy = false, -- Load this plugin immediately
-  --   config = function()
-  --     require("everforest").setup({
-  --       background = "hard", -- Set the background to 'hard'
-  --       italis = true, -- Enable italics
-  --       transparent_background_level = 1, -- Uncomment to enable transparency
-  --       diagnostic_text_highlight = true, -- Enable diagnostic text highlight
-  --       diagnostic_virtual_text = "coloured", -- Set diagnostic virtual text to colored
-  --       colours_override = function(palette)
-  --         palette.bg0 = "#1A1A22" -- Override background color
-  --       end,
-  --     })
-  --   end,
-  -- },
+  {
+    "neanias/everforest-nvim",
+    version = false, -- Use the latest version
+    lazy = false,    -- Load this plugin immediately
+    config = function()
+      require("everforest").setup({
+        background = "hard", -- Set the background to 'hard'
+        -- italis = true,                        -- Enable italics
+        -- transparent_background_level = 1,     -- Uncomment to enable transparency
+        -- diagnostic_text_highlight = true,     -- Enable diagnostic text highlight
+        -- diagnostic_virtual_text = "coloured", -- Set diagnostic virtual text to colored
+        -- colours_override = function(palette)
+        --   palette.bg0 = "#1A1A22"             -- Override background color
+        -- end,
+      })
+    end,
+  },
   -- {
   --   -- Plugin for the Oldworld color scheme
   --   "dgox16/oldworld.nvim",
@@ -185,7 +185,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- Set the default color scheme
-      colorscheme = "kanagawa",
+      colorscheme = "everforest",
     },
   },
 }
