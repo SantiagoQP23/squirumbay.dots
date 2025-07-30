@@ -6,7 +6,8 @@
     "lazyvim.plugins.extras.coding.nvim-cmp",
     "lazyvim.plugins.extras.lang.angular",
     "lazyvim.plugins.extras.lang.prisma",
-    "lazyvim.plugins.extras.ui.mini-animate"
+    "lazyvim.plugins.extras.ui.mini-animate",
+    "lazyvim.plugins.extras.ui.treesitter-context"
   ],
   "install_version": 7,
   "news": {

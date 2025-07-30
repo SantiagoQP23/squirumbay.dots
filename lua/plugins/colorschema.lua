@@ -185,6 +185,11 @@ return {
     },
   },
   {
+    "webhooked/kanso.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "rebelot/kanagawa.nvim",
     priority = 1000,
     lazy = true,
@@ -239,7 +244,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- Set the default color scheme
-      colorscheme = "catppuccin",
+      colorscheme = "kanso-ink",
     },
   },
 }
